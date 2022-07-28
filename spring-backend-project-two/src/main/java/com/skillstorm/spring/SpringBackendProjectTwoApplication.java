@@ -14,17 +14,17 @@ public class SpringBackendProjectTwoApplication implements CommandLineRunner {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBackendProjectTwoApplication.class, args);
 	}
-	
+
 	@Autowired
 	UserRepository userRepository;
 
 	// CommandLineRunner provides a run method to run in our Tomcat embedded server
 	@Override
 	public void run(String... args) throws Exception {
-		userRepository.save(new User(1,"Bobby", "Boucher"));
-		userRepository.save(new User(2,"Daffy", "Duck"));
-		userRepository.save(new User(3,"Tommy", "Hilfigure"));
-		userRepository.save(new User(4,"Mike", "Wazowski"));
+		userRepository.save(new User("Bobby", "Boucher"));
+		userRepository.save(new User("Daffy", "Duck"));
+		userRepository.save(new User("Tommy", "Hilfiger"));
+		userRepository.save(new User("Mike", "Wazowski"));
 
 	}
 

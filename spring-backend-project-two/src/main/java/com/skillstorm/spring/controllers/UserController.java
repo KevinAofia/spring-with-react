@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.skillstorm.spring.models.User;
 import com.skillstorm.spring.repositories.UserRepository;
 
-//@CrossOrigin(origins = "http://localhost:3000/") // 
+@CrossOrigin(origins = "http://localhost:3000/")
 @RestController
 @RequestMapping("test-api/")
 public class UserController {
