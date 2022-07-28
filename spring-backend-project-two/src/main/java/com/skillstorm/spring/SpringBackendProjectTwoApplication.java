@@ -12,6 +12,7 @@ import com.skillstorm.spring.repositories.UserRepository;
 public class SpringBackendProjectTwoApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
+		// Application Context
 		SpringApplication.run(SpringBackendProjectTwoApplication.class, args);
 	}
 
@@ -25,7 +26,6 @@ public class SpringBackendProjectTwoApplication implements CommandLineRunner {
 		userRepository.save(new User("Daffy", "Duck"));
 		userRepository.save(new User("Tommy", "Hilfiger"));
 		userRepository.save(new User("Mike", "Wazowski"));
-
 	}
 
 }
